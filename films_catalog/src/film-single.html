@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="home.html" class="logo"></a>
+            <div class="buttons">
+                <form action="films.html">
+                    <button class="butt butt1 films">
+                        ФИЛЬМЫ
+                    </button>
+                </form>
+                <form action="">
+                    <button class="butt butt2 serials">
+                        СЕРИАЛЫ
+                    </button>
+                </form>
+                <form action=""><button class="butt butt3 mults">
+                        МУЛЬТИКИ
+                    </button></form>
+            </div>
+            <!-- <button class="sign-in">ВХОД</button> -->
+        </header>
+
+        <main class="film-single">
+            <div class="film-single-descr">
+                <img src="" alt="" class="film-descr-img">
+                <div class="film-info">
+                    <p class="film-title"></p>
+                    <p class="film-mini-title"></p>
+                    <div class="film-time">
+                        <img class="clock" src="img/clock.svg" alt="">
+                        <p class="time"></p>
+                    </div>
+                    <div class="list-info">
+                        <div class="info">
+                            <div class="info-title">ГОД:</div>
+                            <div class="info-data"></div>
+                        </div>
+                        <div class="info">
+                            <div class="info-title">СТРАНА:</div>
+                            <div class="info-data"></div>
+                        </div>
+                        <div class="info">
+                            <div class="info-title">ЖАНР:</div>
+                            <div class="info-data"></div>
+                        </div>
+                        <div class="info">
+                            <div class="info-title">РЕЖИССЁР:</div>
+                            <div class="info-data"></div>
+                        </div>
+                        <div class="info">
+                            <div class="info-title">ПРОИЗВОДСТВО:</div>
+                            <div class="info-data"></div>
+                        </div>
+                        <div class="info">
+                            <div class="info-title">ПРЕМЬЕРА:</div>
+                            <div class="info-data"></div>
+                        </div>
+                        <div class="info">
+                            <div class="info-title">БЮДЖЕТ:</div>
+                            <div class="info-data"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="like-play">
+                    <button class="like"></button>
+                    <button class="play"></button>
+                </div> -->
+            </div>
+            <div class="film-description"></div>
+            <!-- <div class="marks-actors">
+                <div class="marks">
+                    <div class="info info-marks">
+                        <div class="info-title">LUMAX:</div>
+                        <div class="info-data">5.47</div>
+                    </div>
+                    <div class="info info-marks">
+                        <div class="info-title">IMDB:</div>
+                        <div class="info-data"></div>
+                    </div>
+                    <div class="info info-marks">
+                        <div class="info-title">ПРОСМОТРЫ:</div>
+                        <div class="info-data">17 015</div>
+                    </div>
+                </div>
+                <div class="actors-slider">
+                    <div class="mini-slider">
+                        <img src="img/actor1.png" class="slide"
+                            style="z-index: 0; left: 0px;">
+                        <img src="img/actor2.png" class="slide"
+                            style="z-index: 1; left: 80px;">
+                        <img src="img/actor3.png" class="slide"
+                            style="z-index: 2; left: 160px;">
+                        <img src="img/actor4.png" class="slide"
+                            style="z-index: 3; left: 240px;">
+                        <img src="img/actor5.png" class="slide"
+                            style="z-index: 4; left: 320px;">
+                    </div>
+                    <button class="slider-arrow" onclick="left1()"></button>
+                    <div class="mini-slider-grad"></div>
+                </div>
+            </div> -->
+            <div class="yt-bg">
+                <iframe class="yt" width="790" height="450" src="" frameborder="0" allowfullscreen="true"></iframe>
+                <div class="yt-buttons">
+                <button class="yt-trailer yt-trailer-clicked" onclick="ytTrailerClick(this)">ТРЕЙЛЕР</button>
+                    <button class="yt-watch" onclick="ytWatchClick(this)">СМОТРЕТЬ</button>                    
+                </div>
+                <div class="ut-value">
+                    <a href="" class="utorrent">скачать торрент</a>
+                    <p class="your-value">ТВОЯ ОЦЕНКА ФИЛЬМА:</p>               
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-logos">
+                <img src="img/vk.svg" alt="" class="footer-logo">
+                <img src="img/instagram.svg" alt="" class="footer-logo">
+                <img src="img/twitter.svg" alt="" class="footer-logo">
+                <img src="img/gmail.svg" alt="" class="footer-logo">
+            </div>
+            <p class="footer-text">
+                MAX OSIPENKO, 2020
+            </p>
+        </footer>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/film-single.js"></script>
+</body>
+
+</html>

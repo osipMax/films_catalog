@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="less/main.css">
+    <title>document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <a href="home.html" class="logo"></a>
+            <div class="buttons">
+                <form action="films.html">
+                    <button class="butt butt1 films">
+                        ФИЛЬМЫ
+                    </button>
+                </form>              
+                <form action="">
+                    <button class="butt butt2 serials">
+                        СЕРИАЛЫ
+                    </button>
+                </form>
+                <form action=""><button class="butt butt3 mults">
+                    МУЛЬТИКИ
+                </button></form>
+            </div>
+            <!-- <button class="sign-in">ВХОД</button> -->
+        </header>
+
+        <main class="films-field">
+            <div class="bg-img-front"></div>
+            <h1 class="title">ФИЛЬМЫ</h1>
+            <div class="main-buttons">
+                <div class="button">
+                    <button id="b-all" class="button-1-clicked" onclick="allClick(this)">
+                        <div id="all" class="button-1-clicked-clicked">ВСЕ</div>
+                    </button>
+                    <button id="b-new" class="button-2-unclicked" onclick="newsClick(this)">
+                        <div id="new" class="">Новинки</div>
+                    </button>
+                    <button id="b-top100" class="button-3-unclicked" onclick="top100Click(this)">
+                        <div id="top100" class="">Топ-100</div>
+                    </button>
+                    <div class="genre-button">
+                        <button class="b-1" onmouseover="but_over(event)" onmouseout="but_out(event)">
+                            ПО ЖАНРУ
+                            <div class="hidden-content">
+                                <div class="dropdown-gradient"></div>
+                                <ul class="dropdown-list disable-hover" onmouseout="onout(event)">
+                                    <li id="Action" class="dropdown-content" onclick="contentClick(this)">Боевик</li>
+                                    <li id="Drama" class="dropdown-content" onclick="contentClick(this)">Драма</li>
+                                    <li id="Thriller" class="dropdown-content" onclick="contentClick(this)">Триллер</li>
+                                    <li id="Comedy" class="dropdown-content" onclick="contentClick(this)">Комедия</li>
+                                    <li id="History" class="dropdown-content" onclick="contentClick(this)">Исторический</li>
+                                    <li id="Adventure" class="dropdown-content" onclick="contentClick(this)">Приключения</li>
+                                    <li id="Family" class="dropdown-content" onclick="contentClick(this)">Семейный</li>
+                                    <li id="Fantasy" class="dropdown-content" onclick="contentClick(this)">Фэнтези</li>
+                                    <li id="Biography" class="dropdown-content" onclick="contentClick(this)">Биография</li>
+                                    <li id="Crime" class="dropdown-content" onclick="contentClick(this)">Криминальный</li>
+
+                                </ul>
+                            </div>
+                        </button>
+                        <button class="b-2" onmouseover="but_over1(event)" onmouseout="but_out1(event)">
+                            ПО СТРАНЕ
+                            <div class="hidden-content">
+                                <div class="dropdown-gradient"></div>
+                                <ul class="dropdown-list disable-hover" onmouseout="onout(event)">
+                                    <li id="usa" class="dropdown-content" onclick="contentClick(this)">Америка</li>
+                                    <li id="russia" class="dropdown-content" onclick="contentClick(this)">Россия</li>
+                                    <li id="uk" class="dropdown-content" onclick="contentClick(this)">Англия</li>
+                                    <li id="france" class="dropdown-content" onclick="contentClick(this)">Франция</li>
+                                    <li id="spain" class="dropdown-content" onclick="contentClick(this)">Испания</li>
+                                    <li id="germany" class="dropdown-content" onclick="contentClick(this)">Германия</li>
+                                    <li id="china" class="dropdown-content" onclick="contentClick(this)">Китай</li>
+                                    <li id="india" class="dropdown-content" onclick="contentClick(this)">Индия</li>
+                                    <li id="japan" class="dropdown-content" onclick="contentClick(this)">Япония</li>
+                                </ul>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="add-buttons">
+            </div>
+            <audio id="sound-link" preload="auto">
+            <source src="audio/sword.mp3" type="audio/mpeg" muted="muted">            
+            </audio>
+            <div class="films-list">
+                <!-- film-section -->
+                <!-- <div class="film-section" onclick="location.href='film-single.php'">
+                    <img class="film-card" src="img/alive.png" alt="">
+                    <div class="film-descr">
+                        <div class="line-vert"></div>
+                        <div class="film-name-year">
+                            <div class="film-name">Выживший</div>
+                            <div class="film-year">2002, триллер</div>
+                        </div>
+                    </div>
+                </div> -->
+                <!--  -->
+            </div>
+            <div class="more-button">
+                <button class="more-films" onclick="moreClicked()">ЗАГРУЗИТЬ ЕЩЕ</button>
+            </div>
+            
+        </main>
+        <footer class="footer">
+            <div class="footer-logos">
+                <img src="img/vk.svg" alt="" class="footer-logo">
+                <img src="img/instagram.svg" alt="" class="footer-logo">
+                <img src="img/twitter.svg" alt="" class="footer-logo">
+                <img src="img/gmail.svg" alt="" class="footer-logo">
+            </div>
+            <p class="footer-text">
+                MAX OSIPENKO, 2020
+            </p>
+        </footer>
+
+    </div>
+    <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="js/films.js"></script>
+    <script>
+        // var soundLink = document.getElementById("#sound-link")[0];
+        // document.getElementsByClassName(".film-section").mouseover(function () {
+        //     soundLink.play();
+        // });
+        var soundLink = $("#sound-link")[0];
+        $(".film-section").mouseover(function () {
+            soundLink.play();
+        });
+
+        $(".films-list .film-section") // цикл по всем пунктам меню
+            .each(function (i) {
+                if (i != 0) { // Клонирование нужно только в случае более одного пункта
+                    $("#sound-link")
+                        .clone()
+                        .attr("id", "sound-link-" + i)
+                        .appendTo($(this).parent());
+                }
+                $(this).data("beeper", i); // сохраняем ссылку
+            })
+            .mouseenter(function () {
+                $("#sound-link-" + $(this).data("beeper"))[0].play();
+            });
+        $("#sound-link").attr("id", "sound-link-0"); // изменяем первый элемент в соответствии с условиями 
+    </script>
+</body>
+
+</html>
